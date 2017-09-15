@@ -253,8 +253,6 @@ def do_comp_lint(dirname, fn):
 							reports[row].col = max(reports[row].col, col)
 						else:
 							reports[index] = Report(row, col, msg, typ)
-							
-						print("reports", reports)
 				except:
 					pass
 		except:
